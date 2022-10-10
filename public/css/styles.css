@@ -1,0 +1,107 @@
+
+.border-225{
+    border-radius: 2.25rem !important;
+}
+
+.colorimg{
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(35, 117, 239));
+}
+.textol{
+    position: absolute;
+    right: 62% !important;
+    bottom: 7.25rem !important;
+    left: 48%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+.texto2{
+    position: absolute;
+    right: 62% !important;
+    bottom: 7.25rem !important;
+    left: 45%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+.whl{
+    position: absolute;
+    right: 62% !important;
+    bottom: 7.25rem !important;
+    left: 50%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.mfr{
+    margin-top: 40px;
+}
+
+.contw{
+    position: absolute;
+    right: 62% !important;
+    bottom: 16.25rem !important;
+    left: 42%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(34, 74, 221);
+    text-align: center;
+
+
+
+}
+.icon1{
+
+    position: absolute;
+    right: 62% !important;
+    bottom: 0rem !important;
+    left: 6%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.icon2{
+
+    position: absolute;
+    right: 100% !important;
+    bottom: 0rem !important;
+    left: 16%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.icon3{
+
+    position: absolute;
+    right: 62% !important;
+    bottom: 0rem !important;
+    left: 25%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.p{
+    display: flex;
+
+}
+
+
+
+

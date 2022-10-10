@@ -1,77 +1,147 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide.png" class="d-block colorimg" height="auto" width="100%" alt="...">
+                <div class="texto2 d-md-block">
+                    <h1>Registro</h1>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="{{ route('login') }}" type="buttom" class="btn btn-primary"><i class="fa-solid fa-chevron-left"></i> Atrás</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+    <div class="container mfr">
+        <form method="POST" action="{{ url('registro') }}">
+            @csrf
+            <div class="row">
+                <div class="col">
+
+                        <label for="validationCustom01" class="form-label">Primer Nombre <b style="color: #000000">*</b></label>
+                        <input type="text" class="form-control" id="validationCustom01" required name="USE_PRIMER_NOMBRE">
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                          <br>
+                          <label for="validationCustom01" class="form-label">Nombre De Usuario <b style="color: #000000">*</b></label>
+                        <input type="text" class="form-control" id="validationCustom01" required name="name">
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                          <br>
+
+                          <label for="validationCustom04" class="form-label">Tipo de Identificaccion <b style="color: #000000">*</b></label>
+                          <select class="form-select" id="validationCustom04" required name="USE_TIPO_DOCUMENTO">
+                            <option selected disabled value="">Seleccionar tipo</option>
+                            <option value="CC">CC - Cedula de Ciuadania</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                          <br>
+
+                          <label for="validationCustom04" class="form-label">Departamento <b style="color: #000000">*</b></label>
+                          <select class="form-select" id="validationCustom04" required name="USE_DEPARTAMENTO">
+                            <option selected disabled value="">Seleccionar tipo</option>
+                            <option value="Atlantico">Atlantico</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+
+                </div>
+
+                <div class="col">
+
+                        <label for="validationCustom01" class="form-label">Segundo Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" name="USE_SEGUNDO_NOMBRE">
+                        <br>
+                        <label for="validationCustom01" class="form-label">Email <b style="color: #000000">*</b></label>
+                        <input type="text" class="form-control" id="validationCustom01" required name="email">
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                        <br>
+                        <label for="validationCustom01" class="form-label">Numero de Identificaccion <b style="color: #000000">*</b></label>
+                        <input type="text" class="form-control" id="validationCustom01" required name="USE_NUMERO_IDENTIFICACCION">
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                        <br>
+
+                        <label for="validationCustom04" class="form-label">Municipio <b style="color: #000000">*</b></label>
+                          <select class="form-select" id="validationCustom04" required name="USE_MUNICIPIO">
+                            <option selected disabled value="">Seleccionar tipo</option>
+                            <option value="Galapa">Galapa</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+
+                </div>
+
+                <div class="col">
+
+                        <label for="validationCustom01" class="form-label">Primer Apellido <b style="color: #000000">*</b></label>
+                        <input type="text" class="form-control" id="validationCustom01"  required name="USE_PRIMER_APELLIDO">
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                        <br>
+                        <label for="validationCustom01" class="form-label">Contraseña <b style="color: #000000">*</b></label>
+                        <input type="password" class="form-control" id="validationCustom01" required name="password">
+
+                        <div class="invalid-feedback">
+                            campo obligatorio
+                          </div>
+                        <br>
+
+                        <label for="validationCustom01" class="form-label">Fecha de Nacimiento </label>
+                        <input type="date" class="form-control" id="validationCustom01" name="USE_FECHA_NACIMIENTO">
+                        <br>
+
+                        <label for="validationCustom04" class="form-label">Tipo de zona</label>
+                          <select class="form-select" id="validationCustom04" name="USE_TIPO_ZONA">
+                            <option selected disabled value="">Seleccionar tipo</option>
+                            <option value="Rural">Rural</option>
+                          </select>
+
+
+                </div>
+
+                <div class="col">
+
+                        <label for="validationCustom01" class="form-label">Segundo Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom01"  name="USE_SEGUNDO_APELLIDO">
+                        <br>
+
+                        <label for="validationCustom04" class="form-label">Genero <b style="color: #010000">*</b></label>
+                          <select class="form-select" id="validationCustom04" required name="USE_GENERO">
+                            <option selected disabled value="">Seleccionar Genero</option>
+                            <option value="Masculino">Masculino</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        <br>
+
+                        <label for="validationCustom04" class="form-label">Estado Civil</b></label>
+                          <select class="form-select" id="validationCustom04" name="USE_ESTADO_CIVIL">
+                            <option selected disabled value="">Seleccionar tipo</option>
+                            <option value="Soltero">Soltero</option>
+                          </select>
+
+                </div>
+            </div>
+            <br>
+            <div class="text-center">
+                <input type="submit" class="btn btn-primary" value="Guardar y continuar" >
+            </div>
+
+        </form>
+    </div>
+
+
