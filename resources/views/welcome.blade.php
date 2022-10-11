@@ -419,7 +419,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/slide.png" class="d-block colorimg" height="auto" width="100%" alt="...">
+                <img src="img/slide.jpg" class="d-block colorimg" height="auto" width="100%" alt="...">
                 <div class="texto d-md-block">
                     <h2>Salud Financiera</h2>
                     <p>Registrate e inicia el proceso para conocer el estado de tu salud financiera, no pierdas la

@@ -4,7 +4,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/slide.png" class="d-block colorimg" height="auto" width="100%" alt="...">
+                <img src="img/slide.jpg" class="d-block colorimg" height="auto" width="100%" alt="...">
                 <div class="texto2 d-md-block">
                     <h1>Registro</h1>
                 </div>
@@ -22,12 +22,6 @@
 
                         <label for="validationCustom01" class="form-label">Primer Nombre <b style="color: #000000">*</b></label>
                         <input type="text" class="form-control" id="validationCustom01" required name="USE_PRIMER_NOMBRE">
-                        <div class="invalid-feedback">
-                            campo obligatorio
-                          </div>
-                          <br>
-                          <label for="validationCustom01" class="form-label">Nombre De Usuario <b style="color: #000000">*</b></label>
-                        <input type="text" class="form-control" id="validationCustom01" required name="name">
                         <div class="invalid-feedback">
                             campo obligatorio
                           </div>
@@ -59,12 +53,7 @@
                         <label for="validationCustom01" class="form-label">Segundo Nombre</label>
                         <input type="text" class="form-control" id="validationCustom01" name="USE_SEGUNDO_NOMBRE">
                         <br>
-                        <label for="validationCustom01" class="form-label">Email <b style="color: #000000">*</b></label>
-                        <input type="text" class="form-control" id="validationCustom01" required name="email">
-                        <div class="invalid-feedback">
-                            campo obligatorio
-                          </div>
-                        <br>
+
                         <label for="validationCustom01" class="form-label">Numero de Identificaccion <b style="color: #000000">*</b></label>
                         <input type="text" class="form-control" id="validationCustom01" required name="USE_NUMERO_IDENTIFICACCION">
                         <div class="invalid-feedback">
@@ -90,13 +79,7 @@
                         <div class="invalid-feedback">
                             campo obligatorio
                           </div>
-                        <br>
-                        <label for="validationCustom01" class="form-label">Contraseña <b style="color: #000000">*</b></label>
-                        <input type="password" class="form-control" id="validationCustom01" required name="password">
 
-                        <div class="invalid-feedback">
-                            campo obligatorio
-                          </div>
                         <br>
 
                         <label for="validationCustom01" class="form-label">Fecha de Nacimiento </label>

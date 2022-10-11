@@ -6,7 +6,7 @@
             <div class="carousel-item active">
                 <figure>
                     <div class="capa">
-                        <img src="img/slide.png" class="d-block colorimg" height="auto" width="100%" alt="...">
+                        <img src="img/slide.jpg" class="d-block colorimg" height="auto" width="100%" alt="...">
                         <div class="textol  d-md-block">
                             <h1>Inicio</h1>
                         </div>
@@ -91,7 +91,7 @@
                 <div class="col-md-6">
                     <a class="btn btn-link" href="{{ route('password.request') }}">
                         {{ __('Olvide mi contraseña') }}</a>
-                        
+
                 </div>
             @endif
         </div>
