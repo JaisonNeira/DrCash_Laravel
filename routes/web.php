@@ -21,6 +21,14 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/mp', function () {
-    return view('layouts.main');
+Route::get('/ui', function () {
+    return view('users.index');
 });
+Route::get('/ai', function () {
+    return view('admin.index');
+});
+Route::get('/as', function () {
+    return view('admin.search');
+});
+
+

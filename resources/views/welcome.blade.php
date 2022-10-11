@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Doctor Cash</title>
 
@@ -403,6 +403,8 @@
         }
     </style>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -432,43 +434,57 @@
                     </div>
                 </div>
                 <div class="carousel-rap d-none d-md-block">
-                    <a href="{{ route('login') }}" type="buttom" class="btn btn-primary"><i class="fa-solid fa-lock" style="width: 1.04rem;"> </i>Ingresar</a>
+                    <a href="{{ route('login') }}" type="buttom" class="btn btn-primary"><i class="fa-solid fa-lock"
+                            style="width: 1.04rem;"> </i>Ingresar</a>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <div class="contw d-md-block">
-        <h1>Beneficios</h1>
-        <br>
-    </div>
-    <br><br><br><br>
-    <div class="p">
-        <div class=" icon1 card" style="width: 18rem;">
-            <div class="" style="font-size: 5rem;">
-                <i class="fa-solid fa-money-bill-1"></i>
+    <div class="container">
+
+        <div class="container-flex">
+            <div class="contw d-md-block">
+                <h1>Beneficios</h1>
+                <br>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
-            </p>
-        </div>
-        <div class=" icon2 card" style="width: 18rem;">
-            <div class="" style="font-size: 5rem;">
-                <i class=" fa-solid fa-money-bill-1"></i>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="" style="font-size: 5rem;">
+                            <i class="fa-solid fa-money-bill-1"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="" style="font-size: 5rem;">
+                            <i class="fa-solid fa-money-bill-1"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="" style="font-size: 5rem;">
+                            <i class="fa-solid fa-money-bill-1"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
+                        </p>
+                    </div>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
-            </p>
+
         </div>
-        <div class=" icon3 card" style="width: 18rem;">
-            <div class="" style="font-size: 5rem;">
-                <i class=" fa-solid fa-money-bill-1"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorum iste autem quae natus! Dolore voluptas fugit at. Quasi cupiditate,
-            </p>
-        </div>
+
     </div>
 
     <br>
