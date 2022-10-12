@@ -1,18 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <a href="{{ route('inicio') }}" type="buttom" class="btn btn-outline-primary"><i class="fa-solid fa-lock"
+                            style="width: 1.04rem;"> </i>Atras</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <figure>
-                    <div class="capa">
-                        <img src="img/slide.jpg" class="d-block colorimg" height="auto" width="100%" alt="...">
-                        <div class="textol  d-md-block">
-                            <h1>Inicio</h1>
-                        </div>
-                </figure>
-                <div class="carousel-caption d-none d-md-block alr">
-                    <a href="{{ route('inicio') }}" type="buttom" class="btn btn-primary"><i class="fa-solid fa-chevron-left"></i> Atrás</a>
+                <img src="img/slide.jpg" class="d-block w-100 colorimg" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Diagnostico financiero</h1>
                 </div>
             </div>
         </div>

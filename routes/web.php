@@ -30,5 +30,11 @@ Route::get('/ai', function () {
 Route::get('/as', function () {
     return view('admin.search');
 });
+Route::get('/ud', function () {
+    return view('users.diagnostics');
+});
 
+Route::get('/uid', function () {
+    return view('users.Idiagnostics');
+});
 

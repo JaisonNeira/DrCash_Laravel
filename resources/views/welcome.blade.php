@@ -403,44 +403,43 @@
         }
     </style>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/1182fc2e66.js" crossorigin="anonymous"></script>
+<nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
 
-<body class="antialiased">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide.jpg" class="d-block colorimg" height="auto" width="100%" alt="...">
-                <div class="texto d-md-block">
-                    <h2>Salud Financiera</h2>
-                    <p>Registrate e inicia el proceso para conocer el estado de tu salud financiera, no pierdas la
-                        oportunidad y realizalo ahora,
-                        Es Gratis!
-                    </p>
-                    <div class="carousel-wid d-none d-md-block alr">
-                        <a {{-- href="{{ route('') }}" --}} type="buttom" class="btn btn-primary">Iniciar diagnostico <i
-                                class="fa-solid fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="carousel-rap d-none d-md-block">
-                    <a href="{{ route('login') }}" type="buttom" class="btn btn-primary"><i class="fa-solid fa-lock"
-                            style="width: 1.04rem;"> </i>Ingresar</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <a href="{{ route('login') }}" type="buttom" class="btn btn-outline-primary"><i
+                            class="fa-solid fa-lock" style="width: 1.04rem;"> </i> Ingresar</a>
+                    <a href="{{ route('register') }}" type="buttom" class="btn btn-outline-primary">Registrarse</a>
 
+                </form>
             </div>
         </div>
-    </div>
+    </nav>
+</nav>
+
+<body class="antialiased">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide.jpg" class="d-block w-100 colorimg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Salud financiera</h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="container">
 

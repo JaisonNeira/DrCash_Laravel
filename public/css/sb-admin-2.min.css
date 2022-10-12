@@ -340,7 +340,6 @@ h6 {
 .h1,
 h1 {
     font-size: 2.5rem;
-    color:#000
 }
 .h2,
 h2 {
@@ -349,7 +348,7 @@ h2 {
 .h3,
 h3 {
     font-size: 1.75rem;
-   
+
 }
 .h4,
 h4 {
@@ -5816,7 +5815,7 @@ a.close.disabled {
 .carousel-indicators .active {
     opacity: 1;
 }
-.carousel-caption {
+/* .carousel-caption {
     position: absolute;
     right: 100% !important;
     bottom: 10.25rem !important;
@@ -5827,8 +5826,8 @@ a.close.disabled {
     color: #fff;
     text-align: center;
     width: 100px;
-}
-.carousel-rap{
+} */
+/* .carousel-rap{
     position: absolute;
     right: 15% !important;
     bottom: 10.25rem !important;
@@ -5874,7 +5873,7 @@ a.close.disabled {
     padding-bottom: 15px;
     color: #fff;
     text-align: center;
-}
+ } */
 @-webkit-keyframes spinner-border {
     to {
         transform: rotate(360deg);

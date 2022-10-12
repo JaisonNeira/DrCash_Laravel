@@ -9,7 +9,7 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                
+
                 <a class="collapse-item" href="buttons.html">Profile</a>
                 <a class="collapse-item" href="buttons.html">Logout</a>
             </div>
@@ -38,6 +38,17 @@
             <i class="fas fa-search fa-sm"></i>
             <span>Buscar</span></a>
     </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+            <i class="fas fa-heartbeat"></i>
+            <span>Diagnosticos</span></a>
+    </li>
+    
 
 
 </ul>

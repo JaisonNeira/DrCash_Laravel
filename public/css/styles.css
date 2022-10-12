@@ -4,7 +4,7 @@
 }
 
 .colorimg{
-    filter: opacity(0.4) drop-shadow(0 0 0 rgb(35, 117, 239));
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(29, 73, 139));
 }
 .textol{
     position: absolute;
@@ -52,7 +52,7 @@
     z-index: 10;
     padding-top: 0px;
     padding-bottom: 0px;
-    color: rgb(34, 74, 221);
+    color: rgb(18, 62, 221);
     text-align: center;
 
 
@@ -110,5 +110,8 @@ color: orange
     color: rgb(9, 111, 39)
     }
 
-
+.d{
+    text-align: center;
+    color: rgb(146, 64, 64);
+}
 
