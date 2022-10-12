@@ -1,13 +1,21 @@
-@extends('layouts.app')
-
-@section('content')
+;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Cash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1182fc2e66.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex">
-                    <a href="{{ route('inicio') }}" type="buttom" class="btn btn-outline-primary"><i class="fa-solid fa-lock"
-                            style="width: 1.04rem;"> </i>Atras</a>
+                    <a href="{{ route('login') }}" type="buttom" class="btn btn-outline-primary">Cancelar</a>
                 </form>
             </div>
         </div>
@@ -17,31 +25,34 @@
 
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide.jpg" class="d-block w-100 colorimg" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Diagnostico financiero</h1>
-                </div>
+          <div class="carousel-item active">
+            <img src="img/slide.jpg" class="d-block w-100 colorimg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Diagnostico financiero</h1>
             </div>
+          </div>
         </div>
-    </div>
-    <br>
-    <div class="container">
+      </div> <br>
+      <div class="tex" style="text-align: center">
+        <h3>Ingresos</h3>
+      </div>
+      <br>
+      <div class="container">
         <div class="row justify-content-center"  style="text-align: center">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="card border-225">
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
-
+                            <p>Hola ruby, ¿Cuales son tus ingesos mensuales?</p>
                             <div class="row mb-3">
                                 <label for="email"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Usuario') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('Ingresos fijos:') }}</label>
 
                                 <div class="col-md-7">
                                     <input id="email" type="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="$">
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -53,12 +64,12 @@
 
                             <div class="row mb-3">
                                 <label for="password"
-                                    class="col-md-4 col-form-label text-md-end">{{ __('Contraseña') }}</label>
+                                    class="col-md-4 col-form-label text-md-end">{{ __('Otros ingresos:') }}</label>
 
                                 <div class="col-md-7">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="current-password">
+                                        required autocomplete="current-password" placeholder="$">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -68,13 +79,12 @@
                                 </div>
                             </div>
                             <br>
-                            <div class="carousel-tp d-none d-md-block">
 
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Ingresar') }} <i class="fa-solid fa-chevron-right"></i>
+                                    {{ __('Siguiente') }}<i class="fa-solid fa-chevron-right"></i>
                                 </button>
 
-                            </div>
+
 
 
                     </div>
@@ -83,24 +93,7 @@
             </div>
         </div>
     </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-
-
-    <div class="row mb-0">
-        <div class="col-md-4 offset-md-4" style="display: flex;">
-
-            @if (Route::has('password.request'))
-                <div class="col-md-6">
-                    <a class="btn btn-link" href="{{ route('register') }}">
-                        {{ __('Registrarse') }}</a>
-
-                </div>
-
-                <div class="col-md-6">
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Olvide mi contraseña') }}</a>
-
-                </div>
-            @endif
-        </div>
-    </div>
+    </body>
+</html>

@@ -35,6 +35,6 @@ Route::get('/ud', function () {
 });
 
 Route::get('/uid', function () {
-    return view('users.Idiagnostics');
+    return view('questions.Idiagnostics');
 });
 
